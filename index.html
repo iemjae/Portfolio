@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ajay Sohal — Patent Analyst | SEP, FTO & 3GPP Standards Research</title>
+<meta name="description" content="Ajay Sohal is a Patent Analyst with 3+ years' experience in SEP analysis, FRAND claim charting, FTO studies, and 3GPP standards research, with an embedded systems and signal processing background. Co-author of '3GPP Through the Ages.' Based in Chandigarh, India, working with clients worldwide.">
+<meta name="keywords" content="patent analyst, SEP analysis, FRAND claim charting, FTO search, prior art search, 3GPP standards, patent landscape, telecom IP, embedded systems, signal processing, Ajay Sohal">
+<meta name="author" content="Ajay Sohal">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://ajaysohal.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Ajay Sohal — Patent Analyst | SEP, FTO & 3GPP Standards Research">
+<meta property="og:description" content="Patent Analyst with 3+ years' experience in SEP analysis, FRAND claim charting, FTO studies, and 3GPP standards research. Co-author of '3GPP Through the Ages.'">
+<meta property="og:url" content="https://ajaysohal.com/">
+<meta property="og:site_name" content="Ajay Sohal">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://ajaysohal.com/assets/ajay-sohal.jpg">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="800">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ajay Sohal — Patent Analyst | SEP, FTO & 3GPP Standards Research">
+<meta name="twitter:description" content="Patent Analyst with 3+ years' experience in SEP analysis, FRAND claim charting, FTO studies, and 3GPP standards research.">
+<meta name="twitter:image" content="https://ajaysohal.com/assets/ajay-sohal.jpg">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ajay Sohal",
+  "url": "https://ajaysohal.com/",
+  "jobTitle": "Patent Analyst",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Copperpod IP"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Chandigarh",
+    "addressCountry": "IN"
+  },
+  "knowsAbout": ["Patent Analysis", "SEP Analysis", "FRAND Licensing", "FTO Studies", "Prior Art Search", "3GPP Standards", "Embedded Systems", "Signal Processing"],
+  "sameAs": [
+    "https://www.linkedin.com/in/ajaysohal",
+    "https://www.amazon.com/3GPP-Through-Ages-Rahul-Vijh-ebook/dp/B0G67CX9LN/"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500&family=DM+Mono:wght@300;400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Space+Grotesk:wght@300;400&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="favicon.ico" sizes="512x512">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Mobile nav overlay -->
+<div class="nav-mobile-overlay" id="mobileNav">
+  <ul>
+    <li><a href="#what" class="mobile-nav-link">Work</a></li>
+    <li><a href="#areas" class="mobile-nav-link">Areas</a></li>
+    <li><a href="#work" class="mobile-nav-link">Projects</a></li>
+    <li><a href="#timeline" class="mobile-nav-link">Timeline</a></li>
+    <li><a href="#notes" class="mobile-nav-link">Notes</a></li>
+    <li><a href="#connect" class="mobile-nav-link">Connect</a></li>
+    <li><a href="Ajay-Sohal-Resume.pdf" download class="mobile-nav-link">Resume</a></li>
+  </ul>
+  <span class="nav-mobile-tagline">Patents · Embedded · Research</span>
+</div>
+
+<!-- Navigation -->
+<nav>
+  <a href="#hero" class="nav-logo">Ajay Sohal</a>
+  <ul class="nav-links">
+    <li><a href="#what">Work</a></li>
+    <li><a href="#areas">Areas</a></li>
+    <li><a href="#work">Projects</a></li>
+    <li><a href="#timeline">Timeline</a></li>
+    <li><a href="#notes">Notes</a></li>
+    <li><a href="#connect">Connect</a></li>
+    <li><a href="Ajay-Sohal-Resume.pdf" download>Resume</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section id="hero">
+  <!-- Data stream particle canvas -->
+  <canvas id="heroParticles" style="position:fixed;inset:0;z-index:0;pointer-events:none;opacity:1;width:100%;height:100%;"></canvas>
+
+  <div class="hero-left">
+    <div class="hero-portrait-wrap">
+      <img 
+        src="assets/ajay-sohal.jpg" 
+        alt="Ajay Sohal" 
+        class="hero-portrait"
+      />
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-label">Patent Intelligence · Embedded Systems · Technology Research</div>
+    <h1 class="hero-name"><span class="hero-line" data-final="Ajay"></span><br><span class="hero-line" data-final="Sohal"></span></h1>
+    <div class="hero-disciplines"><span class="hero-word" data-final="Technology,"></span> <span class="hero-word" data-final="Patents"></span> <span class="hero-word" data-final="&amp;"></span> <span class="hero-word" data-final="Embedded"></span> <span class="hero-word" data-final="Systems"></span></div>
+    <p class="hero-statement">
+      <span class="terminal-prompt">&gt;</span> <span id="heroTypewriter"></span><span class="terminal-cursor">▌</span>
+    </p>
+    <p class="hero-secondary">
+      My work spans patent intelligence, embedded systems, signal processing, reverse engineering, telecom standards, and technology research. I work across the boundary of engineering and intellectual property.
+    </p>
+    <div class="hero-cta-row">
+      <a href="https://calendly.com/ajaesohal/connect-with-me" target="_blank" class="btn-connect">
+        Connect <span class="arrow">→</span>
+      </a>
+      <a href="Ajay-Sohal-Resume.pdf" download class="btn-resume">
+        Download Resume ↓
+      </a>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─── WHAT I DO ─── -->
+<section id="what">
+  <div class="container">
+    <div class="what-inner">
+      <div class="section-meta reveal">
+        <span class="section-index">01 / What I Do</span>
+        <h2 class="section-title">The Fine Print of Innovation</h2>
+      </div>
+      <div class="what-content">
+        <p class="reveal">
+          When companies launch products, there is an invisible layer underneath: standards, architectures, claims, protocols, firmware, and strategic intellectual property. My work is to analyze that layer.
+        </p>
+        <p class="reveal">
+          Patent claims are not just legal text — they are precise technical descriptions of how innovations function. Reading them requires the same mind that designed them: an engineering mind.
+        </p>
+        <p class="muted-p reveal">
+          I investigate how concepts from research become products, how products enter standards, and how standards generate intellectual property rights. Whether for enforcement, risk mitigation, or portfolio strategy — the goal is always the same: precise, defensible analysis that enables confident decisions.<br><br>
+          My background in embedded systems, signal processing, and real-time firmware means I can trace a patent claim from language all the way to silicon.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─── AREAS ─── -->
+<section id="areas">
+  <div class="container">
+    <div class="areas-header reveal">
+      <span class="section-index">02 / Areas of Interest</span>
+      <h2 class="section-title" style="margin-top:16px;">Fields of<br><em style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--ghost);">Investigation</em></h2>
+    </div>
+    <div class="areas-grid reveal-stagger">
+      <div class="area-card reveal">
+        <span class="area-num">01</span>
+        <div class="area-name">Embedded Systems</div>
+        <div class="area-desc">Firmware, microcontrollers, real-time operating systems. Where software meets the physical world at the instruction level.</div>
+      </div>
+      <div class="area-card reveal">
+        <span class="area-num">02</span>
+        <div class="area-name">Telecom Standards</div>
+        <div class="area-desc">3GPP releases, LTE, 5G NR, protocol stacks. The infrastructure of wireless communication — and the IP that governs it.</div>
+      </div>
+      <div class="area-card reveal">
+        <span class="area-num">03</span>
+        <div class="area-name">Signal Processing</div>
+        <div class="area-desc">Spectroscopy, biosignal acquisition, noise filtering, baseline correction. The translation of physical phenomena into useful data.</div>
+      </div>
+      <div class="area-card reveal">
+        <span class="area-num">04</span>
+        <div class="area-name">Reverse Engineering</div>
+        <div class="area-desc">Product teardowns, source code analysis, specification mapping. Understanding how devices actually implement their claims.</div>
+      </div>
+      <div class="area-card reveal">
+        <span class="area-num">05</span>
+        <div class="area-name">Patent Intelligence</div>
+        <div class="area-desc">Prior art research, SEP analysis, FTO studies, claim charting. Transforming technical documents into strategic decisions.</div>
+      </div>
+      <div class="area-card reveal">
+        <span class="area-num">06</span>
+        <div class="area-name">Research & Innovation</div>
+        <div class="area-desc">Technology landscape mapping, portfolio analysis, trend identification. Reading the future through what is already filed.</div>
+      </div>
+      <div class="area-card reveal" style="grid-column: span 3;">
+        <span class="area-num">07</span>
+        <div class="area-name">Human-Machine Systems</div>
+        <div class="area-desc">Interfaces between human intent and machine behavior — sensors, actuators, feedback loops, and the engineering of perception.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─── SELECTED WORK ─── -->
+<section id="work">
+  <div class="container">
+    <div class="work-header reveal">
+      <span class="section-index">03 / Selected Work</span>
+      <h2 class="section-title" style="margin-top:16px;">Investigations &<br><em style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--ghost);">Projects</em></h2>
+    </div>
+    <div class="work-list">
+      <div class="work-item reveal">
+        <div class="work-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="10" cy="10" r="8.5" stroke="rgba(200,191,170,0.4)" stroke-width="0.7"/>
+            <path d="M10 1.5 Q14 6 14 10 Q14 14 10 18.5 Q6 14 6 10 Q6 6 10 1.5Z" stroke="rgba(200,191,170,0.4)" stroke-width="0.7" fill="none"/>
+            <line x1="1.5" y1="10" x2="18.5" y2="10" stroke="rgba(200,191,170,0.4)" stroke-width="0.7"/>
+            <line x1="2.5" y1="6.5" x2="17.5" y2="6.5" stroke="rgba(200,191,170,0.25)" stroke-width="0.6"/>
+            <line x1="2.5" y1="13.5" x2="17.5" y2="13.5" stroke="rgba(200,191,170,0.25)" stroke-width="0.6"/>
+          </svg>
+        </div>
+        <div class="work-num">01</div>
+        <div class="work-body">
+          <div class="work-title">3GPP Standards Analysis & SEP Claim Charting</div>
+          <div class="work-desc">Deep investigation of 3GPP technical specifications across LTE and 5G NR releases. Mapping standard-essential patent claims against protocol behavior, specification text, and implementation requirements for telecom IP licensing and enforcement proceedings.</div>
+        </div>
+        <div class="work-tags">
+          <span class="tag">Telecom</span>
+          <span class="tag">SEP</span>
+          <span class="tag">Claim Charting</span>
+        </div>
+      </div>
+      <div class="work-item reveal">
+        <div class="work-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="1.5" width="11" height="15" rx="0.5" stroke="rgba(200,191,170,0.4)" stroke-width="0.7"/>
+            <line x1="5.5" y1="5.5" x2="11.5" y2="5.5" stroke="rgba(200,191,170,0.35)" stroke-width="0.7"/>
+            <line x1="5.5" y1="8" x2="11.5" y2="8" stroke="rgba(200,191,170,0.35)" stroke-width="0.7"/>
+            <line x1="5.5" y1="10.5" x2="9" y2="10.5" stroke="rgba(200,191,170,0.35)" stroke-width="0.7"/>
+            <circle cx="15" cy="15" r="3.5" fill="var(--charcoal)" stroke="rgba(200,191,170,0.5)" stroke-width="0.7"/>
+            <path d="M13.8 15 L14.6 15.8 L16.2 14.2" stroke="rgba(200,191,170,0.8)" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="work-num">02</div>
+        <div class="work-body">
+          <div class="work-title">Patent Portfolio Investigation</div>
+          <div class="work-desc">Analyzed 500+ patents and 100+ portfolios supporting client monetization strategies exceeding $100M in revenue. Work spans infringement identification, prior art research, validity analysis, and strategic FTO assessment across USPTO, WIPO, Espacenet, and Derwent databases.</div>
+        </div>
+        <div class="work-tags">
+          <span class="tag">FTO</span>
+          <span class="tag">Prior Art</span>
+          <span class="tag">Portfolio</span>
+        </div>
+      </div>
+      <div class="work-item reveal">
+        <div class="work-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 16 Q5 8 8 10 Q11 12 14 4 Q16 0 18 4" stroke="rgba(200,191,170,0.5)" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+            <line x1="2" y1="16" x2="18" y2="16" stroke="rgba(200,191,170,0.25)" stroke-width="0.6"/>
+            <line x1="2" y1="4" x2="2" y2="16" stroke="rgba(200,191,170,0.25)" stroke-width="0.6"/>
+            <circle cx="8" cy="10" r="1.2" fill="rgba(200,191,170,0.5)"/>
+            <circle cx="14" cy="4" r="1.2" fill="rgba(200,191,170,0.5)"/>
+          </svg>
+        </div>
+        <div class="work-num">03</div>
+        <div class="work-body">
+          <div class="work-title">TDLAS Gas Sensing System</div>
+          <div class="work-desc">Engineered a tunable diode laser absorption spectroscopy system on RedPitaya embedded platform. Achieved 90% measurement accuracy with 75% noise reduction through custom baseline correction algorithms and signal normalization pipelines implemented in Python and MATLAB.</div>
+        </div>
+        <div class="work-tags">
+          <span class="tag">Embedded</span>
+          <span class="tag">Signal Processing</span>
+        </div>
+      </div>
+      <div class="work-item reveal">
+        <div class="work-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="5" y="5" width="10" height="10" rx="1" stroke="rgba(200,191,170,0.4)" stroke-width="0.7"/>
+            <rect x="7.5" y="7.5" width="5" height="5" rx="0.5" stroke="rgba(200,191,170,0.5)" stroke-width="0.6"/>
+            <line x1="8" y1="5" x2="8" y2="2.5" stroke="rgba(200,191,170,0.35)" stroke-width="0.7"/>
+            <line x1="12" y1="5" x2="12" y2="2.5" stroke="rgba(200,191,170,0.35)" stroke-width="0.7"/>
+            <line x1="8" y1="15" x2="8" y2="17.5" stroke="rgba(200,191,170,0.35)" stroke-width="0.7"/>
+            <line x1="12" y1="15" x2="12" y2="17.5" stroke="rgba(200,191,170,0.35)" stroke-width="0.7"/>
+            <line x1="5" y1="8" x2="2.5" y2="8" stroke="rgba(200,191,170,0.35)" stroke-width="0.7"/>
+            <line x1="5" y1="12" x2="2.5" y2="12" stroke="rgba(200,191,170,0.35)" stroke-width="0.7"/>
+            <line x1="15" y1="8" x2="17.5" y2="8" stroke="rgba(200,191,170,0.35)" stroke-width="0.7"/>
+            <line x1="15" y1="12" x2="17.5" y2="12" stroke="rgba(200,191,170,0.35)" stroke-width="0.7"/>
+          </svg>
+        </div>
+        <div class="work-num">04</div>
+        <div class="work-body">
+          <div class="work-title">SpectroPlotter</div>
+          <div class="work-desc">Designed and built a low-cost portable spectroscope using Raspberry Pi and RGB light sensing, achieving 70% efficiency for light absorption measurement and liquid solubility analysis. Includes Python data acquisition modules and an offline GUI for spectral visualization.</div>
+        </div>
+        <div class="work-tags">
+          <span class="tag">Hardware</span>
+          <span class="tag">Python</span>
+        </div>
+      </div>
+      <div class="work-item reveal">
+        <div class="work-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 10 L5 10 L6.5 6 L8 14 L9.5 4 L11 14 L12.5 8 L14 10 L19 10" stroke="rgba(200,191,170,0.55)" stroke-width="0.85" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="work-num">05</div>
+        <div class="work-body">
+          <div class="work-title">3-Lead ECG Signal Processing System</div>
+          <div class="work-desc">Designed a real-time 3-lead ECG acquisition system using Arduino with digital filtering for noise suppression. Applied baseline correction and signal normalization in MATLAB achieving 75% improvement in processing accuracy and reliable detection of ECG waveform morphology.</div>
+        </div>
+        <div class="work-tags">
+          <span class="tag">Biosignal</span>
+          <span class="tag">Arduino</span>
+        </div>
+      </div>
+      <div class="work-item reveal">
+        <div class="work-icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 3 C4 3 7 2 10 4 C13 2 16 3 16 3 L16 16 C16 16 13 15 10 17 C7 15 4 16 4 16 Z" stroke="rgba(200,191,170,0.4)" stroke-width="0.7" fill="none"/>
+            <line x1="10" y1="4" x2="10" y2="17" stroke="rgba(200,191,170,0.3)" stroke-width="0.7"/>
+            <line x1="6.5" y1="7" x2="9" y2="6.5" stroke="rgba(200,191,170,0.3)" stroke-width="0.6"/>
+            <line x1="6.5" y1="9.5" x2="9" y2="9" stroke="rgba(200,191,170,0.3)" stroke-width="0.6"/>
+            <line x1="11" y1="6.5" x2="13.5" y2="7" stroke="rgba(200,191,170,0.3)" stroke-width="0.6"/>
+            <line x1="11" y1="9" x2="13.5" y2="9.5" stroke="rgba(200,191,170,0.3)" stroke-width="0.6"/>
+          </svg>
+        </div>
+        <div class="work-num">06</div>
+        <div class="work-body">
+          <div class="work-title">3GPP Through The Ages — Co-authored Guidebook</div>
+          <div class="work-desc">Co-authored a comprehensive technical reference covering the full evolution of 3GPP standards from early releases through 5G NR. A structured guide to the architecture, key decisions, and intellectual landscape of modern wireless telecommunications.</div>
+          <a href="https://www.amazon.com/3GPP-Through-Ages-Rahul-Vijh-ebook/dp/B0G67CX9LN/" target="_blank" class="work-link">Read on Amazon ↗</a>
+        </div>
+        <div class="work-tags">
+          <span class="tag">Publication</span>
+          <span class="tag">3GPP</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─── TIMELINE ─── -->
+<section id="timeline">
+  <div class="container">
+    <div class="timeline-header reveal">
+      <span class="section-index">04 / Career Arc</span>
+      <h2 class="section-title" style="margin-top:16px;">A Path Through<br><em style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--ghost);">Disciplines</em></h2>
+    </div>
+    <div class="timeline-track">
+      <div class="timeline-item reveal">
+        <div class="timeline-year">2018 – 2022</div>
+        <div class="timeline-content">
+          <div class="timeline-stage">Electrical Engineering</div>
+          <div class="timeline-detail">B.E. in Electronics & Communication at Panjab University. Foundation in circuits, signals, systems, and embedded electronics. Early explorations in data science, robotics, and Python-based instrumentation at DRDO, PGIMER, and NITTTR.</div>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-year">Jan – Jun 2023</div>
+        <div class="timeline-content">
+          <div class="timeline-stage">Embedded Systems & Signal Processing</div>
+          <div class="timeline-detail">Intern at CSIO-CSIR. Designed real-world instrumentation systems — TDLAS gas sensing, spectroscopy tools, signal acquisition pipelines. First encounter with the gap between what technology claims and what it actually does.</div>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-year">Jul 2023 – Feb 2025</div>
+        <div class="timeline-content">
+          <div class="timeline-stage">Patent Intelligence</div>
+          <div class="timeline-detail">Research Analyst at Copperpod IP. Applied engineering knowledge to intellectual property — prior art, FTO, infringement analysis, claim charting. Discovered that reading patents requires the same technical intuition as writing code.</div>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-year">Feb 2025 – Present</div>
+        <div class="timeline-content">
+          <div class="timeline-stage">Standards & Innovation Research</div>
+          <div class="timeline-detail">Senior Research Analyst at Copperpod IP — SEP analysis, 3GPP standards, portfolio strategy. Co-authored "3GPP Through the Ages." Working at the boundary of engineering depth and legal strategy, where both must be fluent in the same language.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ─── NOTES ─── -->
+<section id="notes">
+  <div class="container">
+    <div class="notes-header reveal">
+      <span class="section-index">05 / Thinking</span>
+      <h2 class="section-title" style="margin-top:16px;">Notes on<br><em style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--ghost);">Technology & IP</em></h2>
+    </div>
+    <div class="notes-grid reveal-stagger">
+      <a class="note-card reveal" href="notes/patents-reveal-technology-trends.html">
+        <span class="note-type">Patent Strategy</span>
+        <div class="note-headline">Patents reveal technology trends before products launch</div>
+        <div class="note-preview">Patent filings are a form of technical disclosure that precedes commercialization by years. The most important signals about where a technology is going are often already filed — waiting to be read correctly.</div>
+        <div class="note-read-more">Read article →</div>
+      </a>
+      <a class="note-card reveal" href="notes/engineering-knowledge-intellectual-property.html">
+        <span class="note-type">Engineering × Law</span>
+        <div class="note-headline">Why engineering knowledge matters in intellectual property</div>
+        <div class="note-preview">A claim that reads "a processor configured to..." can only be properly evaluated by someone who understands what a processor actually does at the instruction level. IP analysis without engineering depth is legal speculation.</div>
+        <div class="note-read-more">Read article →</div>
+      </a>
+      <a class="note-card reveal" href="notes/3gpp-standards-intellectual-property.html">
+        <span class="note-type">Telecom</span>
+        <div class="note-headline">Inside 3GPP: how telecom standards become intellectual property</div>
+        <div class="note-preview">Every 3GPP release is a negotiated technical consensus between hundreds of companies. Embedded within those specifications are thousands of patent claims — each representing a moment where an engineer's insight became a legal right.</div>
+        <div class="note-read-more">Read article →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── METRICS ─── -->
+<section id="metrics">
+  <div class="metrics-grid reveal-stagger">
+    <div class="metric-cell reveal">
+      <div class="metric-num" data-final="10,000+">10,000+</div>
+      <div class="metric-label">Patents<br>Analyzed</div>
+    </div>
+    <div class="metric-cell reveal">
+      <div class="metric-num" data-final="500+">500+</div>
+      <div class="metric-label">Patent<br>Portfolios</div>
+    </div>
+    <div class="metric-cell reveal">
+      <div class="metric-num" data-final="$100M+">$100M+</div>
+      <div class="metric-label">Client<br>Impact</div>
+    </div>
+    <div class="metric-cell reveal">
+      <div class="metric-num" data-final="3+">3+</div>
+      <div class="metric-label">Years<br>Experience</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CONNECT ─── -->
+<section id="connect">
+  <div class="container">
+    <div class="connect-inner">
+      <div class="connect-left reveal">
+        <div class="connect-eyebrow">Get in touch</div>
+        <h2 class="connect-headline">
+          Let's <em>connect.</em>
+        </h2>
+        <p class="connect-body">
+          Interested in technology, patents, research, or just a good conversation? I'm always open to interesting people and interesting problems.
+        </p>
+        <a href="mailto:ajaesohal@gmail.com" class="connect-cta">
+          Send an Email →
+        </a>
+      </div>
+      <div class="connect-right reveal">
+        <a href="mailto:ajaesohal@gmail.com" class="contact-card">
+          <div class="contact-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="3" width="14" height="10" rx="0.5" stroke="currentColor" stroke-width="0.8"/>
+              <path d="M1 4L8 9.5L15 4" stroke="currentColor" stroke-width="0.8"/>
+            </svg>
+          </div>
+          <div class="contact-meta">
+            <span class="contact-type">Email</span>
+            <span class="contact-value">ajaesohal@gmail.com</span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/ajaysohal" target="_blank" class="contact-card">
+          <div class="contact-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="14" height="14" rx="1" stroke="currentColor" stroke-width="0.8"/>
+              <rect x="3.5" y="6" width="2" height="6.5" fill="currentColor" opacity="0.8"/>
+              <circle cx="4.5" cy="4" r="1" fill="currentColor" opacity="0.8"/>
+              <path d="M7.5 6V12.5M7.5 8C7.5 7 8.5 6 10 6C11.5 6 12.5 7 12.5 8.5V12.5" stroke="currentColor" stroke-width="0.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="contact-meta">
+            <span class="contact-type">LinkedIn</span>
+            <span class="contact-value">linkedin.com/in/ajaysohal</span>
+          </div>
+        </a>
+        <a href="https://calendly.com/ajaesohal/connect-with-me" target="_blank" class="contact-card">
+          <div class="contact-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="3" width="14" height="12" rx="0.5" stroke="currentColor" stroke-width="0.8"/>
+              <line x1="5" y1="1" x2="5" y2="5" stroke="currentColor" stroke-width="0.8" stroke-linecap="round"/>
+              <line x1="11" y1="1" x2="11" y2="5" stroke="currentColor" stroke-width="0.8" stroke-linecap="round"/>
+              <line x1="1" y1="7" x2="15" y2="7" stroke="currentColor" stroke-width="0.8"/>
+              <rect x="4" y="9.5" width="2" height="2" rx="0.3" fill="currentColor" opacity="0.6"/>
+              <rect x="7" y="9.5" width="2" height="2" rx="0.3" fill="currentColor" opacity="0.6"/>
+            </svg>
+          </div>
+          <div class="contact-meta">
+            <span class="contact-type">Schedule a Call</span>
+            <span class="contact-value">calendly.com/ajaesohal/connect-with-me</span>
+          </div>
+        </a>
+        <a href="Ajay-Sohal-Resume.pdf" download class="contact-card">
+          <div class="contact-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 1.5H10L13 4.5V14.5H3V1.5Z" stroke="currentColor" stroke-width="0.8" stroke-linejoin="round"/>
+              <path d="M10 1.5V4.5H13" stroke="currentColor" stroke-width="0.8" stroke-linejoin="round"/>
+              <path d="M8 7V11.5M8 11.5L6 9.5M8 11.5L10 9.5" stroke="currentColor" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="contact-meta">
+            <span class="contact-type">Resume</span>
+            <span class="contact-value">Download PDF</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <span class="footer-name">© 2026 Ajay Sohal. Built with intention.</span>
+  <span class="footer-copy">Chandigarh, India → Everywhere</span>
+</footer>
+
+<script src="assets/main.js"></script>
+
+</body>
+</html>
