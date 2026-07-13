@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inside 3GPP: How Telecom Standards Become Intellectual Property | Ajay Sohal</title>
+<meta name="description" content="How 3GPP turns wireless engineering proposals into Standard Essential Patents — an inside look at how telecom standards become IP, and why the SEP/FRAND landscape matters beyond telecom.">
+<meta name="keywords" content="3GPP standards, Standard Essential Patents, SEP FRAND licensing, telecom patent landscape, 5G patent analysis">
+<meta name="author" content="Ajay Sohal">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://ajaysohal.com/notes/3gpp-standards-intellectual-property.html">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Inside 3GPP: How Telecom Standards Become Intellectual Property | Ajay Sohal">
+<meta property="og:description" content="How 3GPP turns wireless engineering proposals into Standard Essential Patents — an inside look at how telecom standards become IP, and why the SEP/FRAND landscape matters beyond telecom.">
+<meta property="og:url" content="https://ajaysohal.com/notes/3gpp-standards-intellectual-property.html">
+<meta property="og:site_name" content="Ajay Sohal">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://ajaysohal.com/assets/ajay-sohal.jpg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Inside 3GPP: How Telecom Standards Become Intellectual Property | Ajay Sohal">
+<meta name="twitter:description" content="How 3GPP turns wireless engineering proposals into Standard Essential Patents — an inside look at how telecom standards become IP, and why the SEP/FRAND landscape matters beyond telecom.">
+<meta name="twitter:image" content="https://ajaysohal.com/assets/ajay-sohal.jpg">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Inside 3GPP: How Telecom Standards Become Intellectual Property",
+  "description": "How 3GPP turns wireless engineering proposals into Standard Essential Patents — an inside look at how telecom standards become IP, and why the SEP/FRAND landscape matters beyond telecom.",
+  "author": {
+    "@type": "Person",
+    "name": "Ajay Sohal",
+    "url": "https://ajaysohal.com/"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Ajay Sohal"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ajaysohal.com/notes/3gpp-standards-intellectual-property.html"
+  },
+  "image": "https://ajaysohal.com/assets/ajay-sohal.jpg",
+  "datePublished": "2026-07-13",
+  "dateModified": "2026-07-13"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500&family=DM+Mono:wght@300;400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Space+Grotesk:wght@300;400&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="../favicon.ico" sizes="512x512">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<div class="nav-mobile-overlay" id="mobileNav">
+  <ul>
+    <li><a href="../index.html#what" class="mobile-nav-link">Work</a></li>
+    <li><a href="../index.html#areas" class="mobile-nav-link">Areas</a></li>
+    <li><a href="../index.html#work" class="mobile-nav-link">Projects</a></li>
+    <li><a href="../index.html#timeline" class="mobile-nav-link">Timeline</a></li>
+    <li><a href="../index.html#notes" class="mobile-nav-link">Notes</a></li>
+    <li><a href="../index.html#connect" class="mobile-nav-link">Connect</a></li>
+    <li><a href="../Ajay-Sohal-Resume.pdf" download class="mobile-nav-link">Resume</a></li>
+  </ul>
+  <span class="nav-mobile-tagline">Patents · Embedded · Research</span>
+</div>
+
+<nav>
+  <a href="../index.html#hero" class="nav-logo">Ajay Sohal</a>
+  <ul class="nav-links">
+    <li><a href="../index.html#what">Work</a></li>
+    <li><a href="../index.html#areas">Areas</a></li>
+    <li><a href="../index.html#work">Projects</a></li>
+    <li><a href="../index.html#timeline">Timeline</a></li>
+    <li><a href="../index.html#notes">Notes</a></li>
+    <li><a href="../index.html#connect">Connect</a></li>
+    <li><a href="../Ajay-Sohal-Resume.pdf" download>Resume</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main class="article-page">
+  <div class="article-inner">
+    <a class="article-back" href="../index.html#notes">← Back to Ajay Sohal</a>
+    <div class="article-meta">
+      <span class="article-type">Telecom</span>
+      <span class="article-read-time">· 7 min read</span>
+    </div>
+    <h1 class="article-title">Inside 3GPP: How Telecom Standards Become Intellectual Property</h1>
+    <p class="article-lede">Every 3GPP release is a negotiated technical consensus between hundreds of companies. Embedded within those specifications are thousands of patent claims — each representing a moment where an engineer's insight became a legal right.</p>
+    <div class="article-body">
+      <p>3GPP — the Third Generation Partnership Project — is easy to misunderstand. It sounds like a regulatory body, but it isn't. It sounds like a consortium of researchers, but that's not quite right either. It is, in the most accurate description, a sustained technical negotiation between the companies that build the world's wireless infrastructure, mediated by a formal process for converting engineering proposals into global standards.</p>
+      <p>The output of this process — the Technical Specifications that define LTE, 5G NR, and their successors — is what gets implemented in every smartphone, every base station, every IoT module deployed at scale. And embedded within those specifications, at every level from the physical layer to the core network, are the fingerprints of the companies whose engineers wrote the proposals that shaped them.</p>
+
+      <blockquote><p>Standards are not discovered. They are negotiated. And negotiation leaves traces — in working group minutes, in technical proposals, and eventually in patent claims.</p></blockquote>
+
+      <h3>How a technical proposal becomes a standard</h3>
+      <p>The process works roughly like this: a company's engineers identify a technical problem — say, how to efficiently allocate radio resources in a multi-user MIMO scenario — and develop a solution. They submit a technical proposal to the relevant 3GPP working group (RAN1, RAN2, SA2, and so on). The working group discusses, modifies, debates alternatives, and eventually either adopts the proposal, merges it with others, or rejects it. What gets adopted becomes part of the specification.</p>
+      <p>The company that submitted the winning proposal has, at this point, done something strategically important: they've contributed a technical solution that the entire industry is now obligated to implement. And if they've filed a patent on that solution — which most large contributors do, systematically — they now hold a <strong>Standard Essential Patent</strong>: a patent that cannot be designed around, because the standard itself mandates the behavior it covers.</p>
+
+      <h3>The SEP landscape</h3>
+      <p>The SEP ecosystem in telecom is enormous. Billions of dollars in licensing revenue flow annually through declarations of essentiality, FRAND (Fair, Reasonable, and Non-Discriminatory) licensing negotiations, and — when those negotiations fail — litigation. The companies with the largest declared SEP portfolios — Huawei, Qualcomm, Ericsson, Nokia, Samsung — have spent decades building positions through active participation in standards development.</p>
+      <p>Working with SEPs requires navigating two distinct technical layers simultaneously. The first is the standard itself: what does the specification say, and what technical behavior does it mandate? The second is the patent: what does the claim cover, and does the mandated behavior fall within that coverage? Both layers require genuine technical fluency — one in telecommunications engineering, one in patent claim construction.</p>
+
+      <h3>Why this matters beyond telecom</h3>
+      <p>The 3GPP model — where standards development and IP accumulation happen in parallel — is increasingly the norm in technology, not the exception. Wi-Fi, Bluetooth, video compression (HEVC, AV1, VVC), USB, display standards — all of these involve standards bodies where companies simultaneously shape technical outcomes and build IP portfolios around the decisions they influence.</p>
+      <p>Understanding how this works is not just useful for telecom analysts. It's a mental model for understanding how technical power consolidates in any industry where interoperability standards matter — which, in the connected world, is nearly all of them.</p>
+    </div>
+  </div>
+
+  <section class="more-notes">
+    <div class="container">
+      <span class="section-index">More Notes</span>
+      <div class="notes-grid reveal-stagger" style="margin-top:32px;">
+      <a class="note-card reveal" href="patents-reveal-technology-trends.html">
+        <span class="note-type">Patent Strategy</span>
+        <div class="note-headline">Patents Reveal Technology Trends Before Products Launch</div>
+        <div class="note-preview">Patent filings are a form of technical disclosure that precedes commercialization by years. The most important signals about where a technology is going are often already filed — waiting to be read correctly.</div>
+        <div class="note-read-more">Read article →</div>
+      </a>
+      <a class="note-card reveal" href="engineering-knowledge-intellectual-property.html">
+        <span class="note-type">Engineering × Law</span>
+        <div class="note-headline">Why Engineering Knowledge Matters in Intellectual Property</div>
+        <div class="note-preview">A claim that reads "a processor configured to..." can only be properly evaluated by someone who understands what a processor actually does at the instruction level. IP analysis without engineering depth is legal speculation.</div>
+        <div class="note-read-more">Read article →</div>
+      </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span class="footer-name">© 2026 Ajay Sohal. Built with intention.</span>
+  <span class="footer-copy">Chandigarh, India → Everywhere</span>
+</footer>
+
+<script src="../assets/main.js"></script>
+
+</body>
+</html>
