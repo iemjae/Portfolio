@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Engineering Knowledge Matters in Intellectual Property | Ajay Sohal</title>
+<meta name="description" content="Why engineering depth changes patent claim construction and infringement analysis — the case for treating IP work as inseparable from technical literacy.">
+<meta name="keywords" content="patent claim construction, IP infringement analysis, engineering background patent law, technical patent analysis, FTO analysis">
+<meta name="author" content="Ajay Sohal">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://ajaysohal.com/notes/engineering-knowledge-intellectual-property.html">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Why Engineering Knowledge Matters in Intellectual Property | Ajay Sohal">
+<meta property="og:description" content="Why engineering depth changes patent claim construction and infringement analysis — the case for treating IP work as inseparable from technical literacy.">
+<meta property="og:url" content="https://ajaysohal.com/notes/engineering-knowledge-intellectual-property.html">
+<meta property="og:site_name" content="Ajay Sohal">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://ajaysohal.com/assets/ajay-sohal.jpg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why Engineering Knowledge Matters in Intellectual Property | Ajay Sohal">
+<meta name="twitter:description" content="Why engineering depth changes patent claim construction and infringement analysis — the case for treating IP work as inseparable from technical literacy.">
+<meta name="twitter:image" content="https://ajaysohal.com/assets/ajay-sohal.jpg">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Why Engineering Knowledge Matters in Intellectual Property",
+  "description": "Why engineering depth changes patent claim construction and infringement analysis — the case for treating IP work as inseparable from technical literacy.",
+  "author": {
+    "@type": "Person",
+    "name": "Ajay Sohal",
+    "url": "https://ajaysohal.com/"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Ajay Sohal"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ajaysohal.com/notes/engineering-knowledge-intellectual-property.html"
+  },
+  "image": "https://ajaysohal.com/assets/ajay-sohal.jpg",
+  "datePublished": "2026-07-13",
+  "dateModified": "2026-07-13"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500&family=DM+Mono:wght@300;400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Space+Grotesk:wght@300;400&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="../favicon.ico" sizes="512x512">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<div class="nav-mobile-overlay" id="mobileNav">
+  <ul>
+    <li><a href="../index.html#what" class="mobile-nav-link">Work</a></li>
+    <li><a href="../index.html#areas" class="mobile-nav-link">Areas</a></li>
+    <li><a href="../index.html#work" class="mobile-nav-link">Projects</a></li>
+    <li><a href="../index.html#timeline" class="mobile-nav-link">Timeline</a></li>
+    <li><a href="../index.html#notes" class="mobile-nav-link">Notes</a></li>
+    <li><a href="../index.html#connect" class="mobile-nav-link">Connect</a></li>
+    <li><a href="../Ajay-Sohal-Resume.pdf" download class="mobile-nav-link">Resume</a></li>
+  </ul>
+  <span class="nav-mobile-tagline">Patents · Embedded · Research</span>
+</div>
+
+<nav>
+  <a href="../index.html#hero" class="nav-logo">Ajay Sohal</a>
+  <ul class="nav-links">
+    <li><a href="../index.html#what">Work</a></li>
+    <li><a href="../index.html#areas">Areas</a></li>
+    <li><a href="../index.html#work">Projects</a></li>
+    <li><a href="../index.html#timeline">Timeline</a></li>
+    <li><a href="../index.html#notes">Notes</a></li>
+    <li><a href="../index.html#connect">Connect</a></li>
+    <li><a href="../Ajay-Sohal-Resume.pdf" download>Resume</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main class="article-page">
+  <div class="article-inner">
+    <a class="article-back" href="../index.html#notes">← Back to Ajay Sohal</a>
+    <div class="article-meta">
+      <span class="article-type">Engineering × Law</span>
+      <span class="article-read-time">· 6 min read</span>
+    </div>
+    <h1 class="article-title">Why Engineering Knowledge Matters in Intellectual Property</h1>
+    <p class="article-lede">A claim that reads "a processor configured to..." can only be properly evaluated by someone who understands what a processor actually does at the instruction level. IP analysis without engineering depth is legal speculation.</p>
+    <div class="article-body">
+      <p>There is a persistent fiction in intellectual property work that technical analysis is separable from legal analysis — that the engineering questions and the legal questions occupy different lanes, and that a skilled attorney can handle one without deep fluency in the other. In my experience, this is wrong, and the gap it creates has real consequences for the quality of IP work that gets done.</p>
+      <p>Patent claims are written in a specific language — formal, precise, laden with terms of art — but they are ultimately descriptions of technical systems. Every limitation in a claim corresponds to something a real device or process does in the physical world. Evaluating whether a product infringes a claim, or whether a prior art reference anticipates it, requires understanding what both the claim and the product are actually doing at a technical level.</p>
+
+      <blockquote><p>The question is never just "does this product have a processor?" It is "does this processor, in this context, perform this specific function in a way that satisfies this claim limitation?"</p></blockquote>
+
+      <h3>Where the gap shows up</h3>
+      <p>The failure mode I see most often is what I'd call <strong>literal surface matching</strong> — comparing the words in a claim to the words in a product spec, and treating a vocabulary overlap as evidence of infringement. This is not analysis; it is pattern matching. It misses the cases where identical language describes technically distinct operations, and it misses the cases where different language describes the same underlying mechanism.</p>
+      <p>Consider a claim covering a "neural network configured to classify input data based on learned feature representations." A surface read might flag any product that uses machine learning for classification. But the relevant question is whether the specific architectural choices described in the claim — the feature hierarchy, the training methodology, the inference pathway — are present in the accused product. That question can only be answered by someone who understands how neural networks actually work.</p>
+
+      <h3>The claim construction problem</h3>
+      <p>Before any infringement or validity analysis, claim terms must be construed — their meaning must be defined in light of the specification, the prosecution history, and the relevant prior art. This is formally a legal exercise, but it is substantively a technical one. When a claim uses a term like "substantially orthogonal" or "operatively coupled" or "high frequency," the correct construction of that term depends on what those concepts mean in the relevant engineering domain.</p>
+      <p>An attorney without signal processing background construing "substantially orthogonal" will produce a different — and potentially incorrect — result than one who understands what orthogonality means in the context of antenna arrays or spreading codes. The legal framework is the same; the technical grounding changes the outcome.</p>
+
+      <h3>What this means for the work</h3>
+      <p>The best IP analysts I've worked alongside treat technical depth not as a nice-to-have but as a prerequisite. They read datasheets, study architecture diagrams, understand the difference between a hardware implementation and a software approximation of the same function. When the claim says "dedicated hardware," they know what that means and why it matters. When the product documentation is ambiguous, they know which technical questions to ask to resolve the ambiguity.</p>
+      <p>This is why engineering backgrounds — especially in electronics, signal processing, and systems architecture — translate unusually well into patent work. The mental models are directly applicable. The habit of tracing a signal through a system, or understanding a protocol stack from physical layer to application, is exactly the analytical disposition that good IP analysis requires.</p>
+    </div>
+  </div>
+
+  <section class="more-notes">
+    <div class="container">
+      <span class="section-index">More Notes</span>
+      <div class="notes-grid reveal-stagger" style="margin-top:32px;">
+      <a class="note-card reveal" href="patents-reveal-technology-trends.html">
+        <span class="note-type">Patent Strategy</span>
+        <div class="note-headline">Patents Reveal Technology Trends Before Products Launch</div>
+        <div class="note-preview">Patent filings are a form of technical disclosure that precedes commercialization by years. The most important signals about where a technology is going are often already filed — waiting to be read correctly.</div>
+        <div class="note-read-more">Read article →</div>
+      </a>
+      <a class="note-card reveal" href="3gpp-standards-intellectual-property.html">
+        <span class="note-type">Telecom</span>
+        <div class="note-headline">Inside 3GPP: How Telecom Standards Become Intellectual Property</div>
+        <div class="note-preview">Every 3GPP release is a negotiated technical consensus between hundreds of companies. Embedded within those specifications are thousands of patent claims — each representing a moment where an engineer's insight became a legal right.</div>
+        <div class="note-read-more">Read article →</div>
+      </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span class="footer-name">© 2026 Ajay Sohal. Built with intention.</span>
+  <span class="footer-copy">Chandigarh, India → Everywhere</span>
+</footer>
+
+<script src="../assets/main.js"></script>
+
+</body>
+</html>
